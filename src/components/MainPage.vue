@@ -49,7 +49,7 @@ const word = ref(null)
 const isTrue = ref(true)
 const trueCount = ref(0)
 const falseCount = ref(0)
-const timer = ref(5)
+const timer = ref(30)
 const interval = ref(false)
 const isRunning = ref(false)
 const isFinish = ref(false)
@@ -107,7 +107,7 @@ const timeProcess = (() => {
 const newGame =(()=>{
   getWord()
   isFinish.value = false
-  timer.value = 60
+  timer.value = 30
   isTrue.value = true
   isRunning.value = false
   word.value = ''
